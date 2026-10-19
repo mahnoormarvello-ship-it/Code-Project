@@ -1,0 +1,44 @@
+# AI and Machine Learning Knowledge Base
+
+## What is Artificial Intelligence?
+Artificial Intelligence (AI) is a field of computer science that develops systems capable of performing tasks that normally require human intelligence. These tasks include understanding language, recognizing images, solving problems, and making decisions.
+
+## What is Machine Learning?
+Machine Learning (ML) is a branch of AI that enables computers to learn patterns from data and make predictions without being explicitly programmed for every task. Common algorithms include Linear Regression, Decision Trees, Random Forest, and Support Vector Machines.
+
+## What is Deep Learning?
+Deep Learning is a subset of machine learning that uses neural networks with multiple layers. It is commonly used in image recognition, speech recognition, natural language processing, and generative AI.
+
+## What is a Large Language Model?
+A Large Language Model (LLM) is an AI model trained on large amounts of text to understand and generate human-like language. LLMs can answer questions, summarize documents, write content, and assist with programming.
+
+## What is RAG?
+Retrieval-Augmented Generation (RAG) combines information retrieval with text generation. First, relevant information is retrieved from a knowledge base. Then, the retrieved information is provided to a language model to generate a grounded answer.
+
+## What are Embeddings?
+Embeddings are numerical vectors that represent the meaning of text. Texts with similar meanings tend to have similar vector representations. Embeddings help systems retrieve relevant information based on semantic similarity.
+
+## What is a Vector Database?
+A vector database stores and searches vector embeddings. It enables semantic search by finding vectors that are similar to a query vector. Pinecone is an example of a vector database.
+
+## What is Chunking?
+Chunking divides a large document into smaller pieces of text. These pieces are called chunks. Chunking helps retrieval systems find relevant information without sending an entire document to the language model.
+
+## What is Pinecone?
+Pinecone is a vector database service used to store, index, and retrieve vector embeddings. It supports namespaces that separate records within an index.
+
+## What is OpenAI Embeddings?
+OpenAI provides embedding models such as text-embedding-3-small. This model converts text into numerical vectors that can be stored in a vector database and used for semantic search.
+
+## What is Chat Completions?
+The OpenAI Chat Completions API generates responses from messages. In a RAG chatbot, the system sends the user's question and relevant retrieved context to the model so it can answer using that information.
+
+## How does a RAG chatbot work?
+1. Load documents from a knowledge base.
+2. Split the documents into chunks.
+3. Generate an embedding for each chunk.
+4. Store the vectors and chunk text in Pinecone.
+5. Convert a user query into an embedding.
+6. Retrieve the most relevant chunks from Pinecone.
+7. Send the retrieved context and user query to an OpenAI chat model.
+8. Return the generated answer to the user.
