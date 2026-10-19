@@ -1,11 +1,9 @@
 
 import os
 from dotenv import load_dotenv
-from google import genai
 
 load_dotenv()
-
-api_key = os.getenv("AQ.Ab8RN6J4cXvBzkaqpVnOMUYE5fwvMnZe7OTATHSHoWOnE9b_PQ")
+api_key = os.getenv("GEMINI_API_KEY")
 
 if not api_key:
     print("ERROR: GEMINI_API_KEY missing from .env")
